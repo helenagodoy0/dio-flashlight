@@ -46,6 +46,9 @@ const App = () => {
     <Text style={toggle ? style.footerOn : style.footerOff}>
       Helena Godoy
     </Text>
+    <Text style={toggle ? style.footerDioOn : style.footerDioOff}>
+      Digital Innovation One
+    </Text>
   </View>
   );
 };
@@ -113,6 +116,21 @@ const style = StyleSheet.create({
     position: 'absolute',
     bottom: 25,
     left: 85,
-  }
-  
+  },
+
+  footerDioOn: {
+    color: 'black',
+    position: 'absolute',
+    bottom: 10,
+    left: 280,
+    fontSize: 10,
+  },
+
+  footerDioOff: {
+    color: 'white',
+    position: 'absolute',
+    bottom: 10,
+    left: 280,
+    fontSize: 10,
+  },
 });
